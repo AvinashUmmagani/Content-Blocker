@@ -60,7 +60,7 @@ window.onload = function () {
 
 			const tx = db.transaction("cb_keywords", "readwrite");
 			const pNotes = tx.objectStore("cb_keywords");
-			var obj = { keyword: " "+input.value+" " };
+			var obj = { keyword: input.value+" " };
 			pNotes.add(obj);
 			input.value = "";
 		}
